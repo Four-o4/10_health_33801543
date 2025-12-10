@@ -1,31 +1,39 @@
-/* ::backdrop {
-    background-color: rgba(0, 194, 201, 0.8);
-} */
 
+/* body styles */
 body {
     background-color: #1f6c69;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
+/* heading styles */
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     color: rgb(255, 255, 255);
     text-align: center;
 }
 
+/* subheading styles */
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin: 10px;
+    padding: 30px;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
+/* paragraph and list item style */
 p,li {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
 }
 
+/* unvisited link */
 a:link {
     color: rgb(83, 215, 251);
     text-decoration: none;

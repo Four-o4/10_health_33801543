@@ -6,18 +6,20 @@
   </head>
 
   <body>
+
     <h1>Welcome to <%= shopData.shopName %></h1>
 
-    <p><a href="/">Home</a></p>
-    <p><a href="/about">About <%= shopData.shopName %></a></p>
-    <p><a href="/users/login">Login</a></p>
-    <p><a href="/users/register">Register with us</a></p>
-    <p><a href="/equipment">Book Equipment</a></p>
+    <section>
+    <div class="nav">
+    <a class="navbutton" href="/">Home</a>
+    <a class="navbutton" href="/about">About <%= shopData.shopName %></a>
+    <a class="navbutton" href="/users/login">Login</a>
+    <a class="navbutton" href="/users/register">Become a member!</a>
+    <a class="navbutton" href="/equipment/list">View Equipment</a>
+    <a class="navbutton" href="/equipment">Book Equipment</a>
+    <a class="navbutton" href="/logout">LogOut</a>
+    </div>
+    </section>
 
-    <!-- To add later:
-    
-    <p><a href="/users/list">Registered users</a></p>
-    <p><a href="/logout">LogOut</a></p>
-    -->
   </body>
 </html>
