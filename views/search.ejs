@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Bookings - <%= shopData.shopName %></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Search Bookings at <%= shopData.shopName %></h1>
+
+    <form method="GET" action="search/results">
+      <p>
+        Equipment Name:
+        <input id="name" type="text" name="name" required />
+      </p>
+
+      <p>
+        Date:
+        <input id="date" type="date" name="date" required />
+      </p>
+
+      <input type="submit" value="Search Bookings" />
+    </form>
+  </body>
