@@ -1,1 +1,7 @@
 home=http://www.doc.gold.ac.uk/usr/453/
+about=http://www.doc.gold.ac.uk/usr/453/about
+search_booking=https://www.doc.gold.ac.uk/usr/453/equipment/search
+view_equipment=https://www.doc.gold.ac.uk/usr/453/equipment/list
+login=https://www.doc.gold.ac.uk/usr/453/users/login
+register=https://www.doc.gold.ac.uk/usr/453/users/register
+book_equipment=https://www.doc.gold.ac.uk/usr/453/equipment/book

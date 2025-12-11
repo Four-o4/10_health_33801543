@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS equipment (
     PRIMARY KEY(id));
 
 # Create booking table
-CREATE TABLE IF NOT EXISTS booking (
+CREATE TABLE IF NOT EXISTS bookings (
     id     INT AUTO_INCREMENT,
     username     CHAR(60),
     equipment_name   CHAR(60),
