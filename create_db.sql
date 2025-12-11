@@ -29,6 +29,4 @@ CREATE TABLE IF NOT EXISTS booking (
     booking_date DATE,
     PRIMARY KEY(id));
 
-CREATE USER 'health_app'@'localhost' IDENTIFIED BY 'qwertyuiop';
-GRANT ALL PRIVILEGES ON health.* TO 'health_app'@'localhost';
-FLUSH PRIVILEGES;
+
