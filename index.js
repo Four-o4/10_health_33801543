@@ -60,6 +60,5 @@ app.use('/users', userRoutes)
 const equipmentRoutes = require("./routes/equipment")
 app.use('/equipment', equipmentRoutes)
 
-
 // Start the web app listening
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

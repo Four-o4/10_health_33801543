@@ -14,6 +14,21 @@ CREATE TABLE IF NOT EXISTS users (
     username     CHAR(30),
     PRIMARY KEY(id));
 
-CREATE USER IF NOT EXISTS 'health_app'@'localhost' IDENTIFIED BY 'qwertyuiop';
+# Create equipment table
+CREATE TABLE IF NOT EXISTS equipment (
+    id     INT AUTO_INCREMENT,
+    name   CHAR(60),
+    PRIMARY KEY(id));
+
+# Create booking table
+CREATE TABLE IF NOT EXISTS booking (
+    id     INT AUTO_INCREMENT,
+    username     CHAR(60),
+    equipment_name   CHAR(60),
+    time        CHAR(60),
+    booking_date DATE,
+    PRIMARY KEY(id));
+
+CREATE USER 'health_app'@'localhost' IDENTIFIED BY 'qwertyuiop';
 GRANT ALL PRIVILEGES ON health.* TO 'health_app'@'localhost';
 FLUSH PRIVILEGES;

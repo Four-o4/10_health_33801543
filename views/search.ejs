@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Search Bookings - <%= shopData.shopName %></title>
-    <link rel="stylesheet" type="text/css" href="/main.css" />
-  </head>
-  <body>
-    <h1>Search Bookings at <%= shopData.shopName %></h1>
 
-    <form method="GET" action="search/results">
-      <p>
-        Equipment Name:
-        <input id="name" type="text" name="name" required />
-      </p>
+<head>
+  <title>Search Bookings</title>
+  <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
 
-      <p>
-        Date:
-        <input id="date" type="date" name="date" required />
-      </p>
+<body>
 
-      <input type="submit" value="Search Bookings" />
-    </form>
-  </body>
+  <h1>Search Bookings at <%= shopData.shopName %></h1>
+
+  <section>
+    <div class="nav">
+      <a class="navbutton" href="/">Home</a>
+      <a class="navbutton" href="/about">About <%= shopData.shopName %></a>
+      <a class="navbutton" href="/users/login">Login</a>
+      <a class="navbutton" href="/users/register">Become a member!</a>
+      <a class="navbutton" href="/equipment/list">View Equipment</a>
+      <a class="navbutton" href="/equipment/search">Search Bookings</a>
+      <a class="navbutton" href="/equipment/book">Book Equipment</a>
+      <a class="navbutton" href="/logout">LogOut</a>
+    </div>
+  </section>
+
+  <form method="POST" action="/equipment/search/results">
+    <p>
+      Equipment Name:
+      <input id="name" type="text" name="name" required />
+    </p>
+
+    <input type="submit" value="Search Bookings" />
+  </form>
+</body>
+
+</html>
