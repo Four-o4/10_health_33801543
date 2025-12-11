@@ -81,6 +81,7 @@ router.post('/search/results', (req, res, next) => {
             //if result is found, a message will pop up to the user, showing the details of their search
             let message = result.map(b => 
             
+            //format a readable message to the user showing who booked the equipment, when they booked it and for what time
             `${b.username} booked ${b.equipment_name} on ${b.booking_date} at ${b.time}`).join('\n');
             
             res.send(`<pre>${message}</pre><br><a href="/equipment/search">Back to Search Page</a>`);
